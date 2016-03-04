@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crud App</title>
+</head>
+<div ng-controller="AddController">
+    <div class="container">
+        <div class="jumbotron"style="border:2px solid black">
+            <h2>Enter Details Of new Employee</h2>
+            </div><div>
+<label for="name">Name</label>  <input type="text" id="name" ng-model="emp.name"><br><br/>
+<label for="email">Email</label>   <input type="text" id="email" ng-model="emp.email"><br><br/>
+<label for="dob">Dob</label>  <input type="text" id="dob" ng-model="empdob"><br><br/>
+<label for="company">Company</label>  <input type="text" id="company" ng-model="emp.company"><br><br/>
+<label for="id">ID</label>  <input type="text" id="id" ng-model="emp..empid"><br><br/>
+<button ng-click="save()">Save</button>
+<ul>
+    <li data-ng-repeat="emp in employeedata">Employee Name:{{emp.name}}-<br>Email:{{emp.email}}<br>Date of Birth:{{emp.dob}}<br>Company name:{{emp.company}}<br>ID:{{id}}
+    </li>
+</ul><br/>
+</div>
+</body>
+</html>

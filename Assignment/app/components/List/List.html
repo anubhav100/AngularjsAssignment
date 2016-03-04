@@ -1,0 +1,53 @@
+<html >
+<head>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body >
+<div ng-controller="listController">
+        <div class="container">
+            <div class="jumbotron"style="border:2px solid black">
+                <h1>ANGULARJS ASSIGNMENT</h1>
+                <p>Employee Details</p>
+            </div>
+        </div>
+        <form role="form">
+            <form class="form-group">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <form action="#" method="get">
+                                <div class="input-group">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-list-search"style="border:2px solid black">
+                                <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>email</th>
+                                    <th>dob</th>
+                                    <th>company Name</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr ng-repeat= "employee in employees">
+                                    <td>{{ employee.address}}</td>
+                                    <td>{{ employee.name}}</td>
+                                    <td>{{ employee.email}}</td>
+                                    <td>{{employee.dob}}</td>
+                                    <td>{{employee.companyName}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        <div>
+            <a href="#/Add">ADD MORE EMPLOYEES</a>
+        </div>
+        </div>
+      </div>
+</body>
+</html>
